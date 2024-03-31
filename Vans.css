@@ -1,0 +1,44 @@
+button {
+    outline: none;
+    background-color: transparent;
+    border: none;   
+}
+
+.container_1 {
+    width: 1220px;
+    display: flex;
+    justify-content: right;
+    margin: 0 auto;
+}
+
+#contact {
+    height: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    background-color: lightgray;
+}
+
+.p_hotline {
+    margin: 5px;
+}
+.button {
+    margin: 5px;
+    transition: 0.25s;
+}
+.button:hover {
+    color: red;
+}
+
+#drake_logo {
+    width: 100%;
+}
+.row_1 {
+    display: flex;
+    justify-content: center;
+}
+.logo {
+    justify-content: center;
+}
+.shopping { 
+}
