@@ -15,6 +15,8 @@
 .profile-header {
     width: 100%;
     height: 225px;
+    position: relative;
+    z-index: 1;
     box-sizing: border-box;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
@@ -31,6 +33,8 @@
 .profile-body {
     width: 100%;
     height: 475px;
+    position: relative;
+    z-index: 1;
     background-color: lightgray;
     border-radius: 10px;
     display: flex;
@@ -43,16 +47,26 @@
     margin-top: 100px;
     display: flex;
     justify-content: center;
-    display: block;
 }
 
-.profile-description {
+.nickname {
     margin-top: 0px;
     display: flex;
     justify-content: center;
+    color: lightskyblue;
+}
+
+.profile-discription {
+    margin-top: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .follow-button {
+    margin-top: 50px;
     width: 70%;
     background-color: yellow;
     font-size: 20px;
@@ -63,4 +77,22 @@
 .follow-button:hover {
     background-color: red;
     transition: 1s;
+}
+
+.profile-avatar{
+    background: #000;
+    position: absolute;
+    top: calc(21%); /* Giữa theo trục y */
+    left: calc(50% - 75px); /* Giữa theo trục x */
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden; 
+    z-index: 10; /* Đặt avatar trên cùng */
+}
+
+.avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
